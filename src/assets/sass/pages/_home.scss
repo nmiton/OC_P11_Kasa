@@ -1,0 +1,69 @@
+.home__page {
+	display: flex;
+	flex-direction: column;
+	padding: 45px;
+
+	@media (max-width: $reponsive-sm) {
+		padding: 20px;
+	}
+
+	.banner {
+		margin-bottom: 50px;
+
+		@media (max-width: $reponsive-sm) {
+			margin-bottom: 27px;
+		}
+	}
+
+	.gallery__rentals {
+		background-color: $bg-grey;
+		border-radius: $border-radius;
+		display: grid;
+		gap: 1rem;
+		padding: 20px;
+		grid-template-columns: repeat(3, 1fr);
+		padding: 45px;
+		gap: 45px;
+
+		@media (max-width: $reponsive-sm) {
+			grid-template-columns: repeat(1, 1fr);
+			gap: 20px;
+			background-color: $white-color;
+			padding: 0;
+		}
+
+		.rental__card {
+			border-radius: 10px;
+			height: 340px;
+			position: relative;
+			background-image: linear-gradient(rgb(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.5) 50%);
+
+			@media (max-width: $reponsive-sm) {
+				height: 255px;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				border-radius: 10px;
+				object-fit: cover;
+				box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+			}
+
+			.rental__title {
+				position: absolute;
+				bottom: 20px;
+				left: 20px;
+				color: $white-color;
+				font-size: 18px;
+				line-height: 25.67px;
+				font-weight: 500;
+				width: 50%;
+			}
+		}
+	}
+}

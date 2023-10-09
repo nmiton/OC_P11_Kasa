@@ -1,0 +1,51 @@
+.error__page {
+	color: $primary-color;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 45px;
+	padding: 45px 0;
+
+	@media (max-width: $reponsive-sm) {
+		padding: 22.5px;
+		gap: 22.5px;
+	}
+
+	span {
+		font-weight: 700;
+		font-size: 288px;
+		line-height: 410px;
+
+		@media (max-width: $reponsive-sm) {
+			line-height: 136.9px;
+			font-size: 96px;
+		}
+	}
+
+	p {
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 51.34px;
+
+		@media (max-width: $reponsive-sm) {
+			line-height: 25.67px;
+			font-size: 18px;
+		}
+	}
+
+	a {
+		color: $primary-color;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 25.67px;
+
+		@media (max-width: $reponsive-sm) {
+			line-height: 19.96px;
+			font-size: 14px;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

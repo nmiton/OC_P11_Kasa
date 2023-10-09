@@ -1,0 +1,35 @@
+$primary-color: #ff6060;
+$white-color: #ffffff;
+$bg-black: #000000;
+$bg-grey: #f6f6f6;
+$border-radius: 25px;
+//Responsive
+$reponsive-sm: 375px;
+
+body {
+	margin: 0;
+
+	#root {
+		margin: auto;
+		font-family: Montserrat;
+		display: flex;
+		flex-direction: column;
+
+		@import "./components/banner";
+		@import "./components/carrousel";
+		@import "./components/dropdown";
+		@import "./components/rental";
+		@import "./sections/header";
+		@import "./sections/footer";
+		@import "./pages/about";
+		@import "./pages/error";
+		@import "./pages/home";
+	}
+
+	.mobile-break {
+		display: none;
+		@media (max-width: $reponsive-sm) {
+			display: block;
+		}
+	}
+}

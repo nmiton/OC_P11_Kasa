@@ -1,0 +1,27 @@
+.about__page {
+	gap: 36px;
+	padding: 45px 45px 0 45px;
+
+	@media (max-width: $reponsive-sm) {
+		padding: 10px 10px 0 10px;
+	}
+
+	.dropdown__container {
+		width: 80%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		padding: 45px 0;
+		gap: 45px;
+
+		@media (max-width: $reponsive-sm) {
+			gap: 20px;
+			width: 100%;
+			padding: 20px 0;
+		}
+
+		.dropdown {
+			width: 100%;
+		}
+	}
+}
