@@ -7,7 +7,7 @@ Kasa est dans le métier de la location d’appartements entre particuliers depu
 
 ## Installation
 
-- Cloner le projet
+- Cloner le projet https://github.com/nmiton/OC_P11_Kasa.git 
 - **npm install** pour installer les dépendances du projet
 - **npm start** pour lancer l'application
 
