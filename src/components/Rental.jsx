@@ -37,10 +37,8 @@ export default function Rental() {
 						<Host host={rental.host} />
 						<Rate rating={rental.rating} />
 					</div>
-					<div className="rental__infos__dropdown">
-						<Dropdown label="Description" details={rental.description} />
-						<Dropdown label="Équipements" details={rental.equipments} />
-					</div>
+					<Dropdown label="Description" details={rental.description} />
+					<Dropdown label="Équipements" details={rental.equipments} />
 				</div>
 			</div>
 		);

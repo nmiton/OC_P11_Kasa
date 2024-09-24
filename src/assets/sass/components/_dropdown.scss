@@ -1,5 +1,7 @@
 .dropdown {
 	color: $white-color;
+	position: relative;
+	height: fit-content;
 
 	.dropdown__header {
 		display: flex;
@@ -10,6 +12,8 @@
 		align-items: center;
 		height: 52px;
 		white-space: normal;
+		position: relative;
+		z-index: 2;
 
 		@media (max-width: $reponsive-sm) {
 			padding: 10px 10px 10px 10px;
@@ -49,12 +53,15 @@
 		background-color: $bg-grey;
 		border-radius: 0 0 10px 10px;
 		color: $primary-color;
-		padding: 20px 15px;
+		padding: 35px 15px 20px 15px;
 		display: flex;
 		flex-direction: column;
 		gap: 5px;
 		font-size: 18px;
 		line-height: 25.67px;
+		position: relative;
+		margin-top: -20px;
+		z-index: 1;
 
 		@media (max-width: $reponsive-sm) {
 			font-size: 12px;

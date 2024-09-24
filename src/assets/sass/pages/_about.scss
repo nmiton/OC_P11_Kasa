@@ -6,13 +6,19 @@
 		padding: 10px 10px 0 10px;
 	}
 
+	.banner {
+		img {
+			filter: brightness(70%);
+		}
+	}
+
 	.dropdown__container {
 		width: 80%;
 		margin: auto;
 		display: flex;
 		flex-direction: column;
 		padding: 45px 0;
-		gap: 45px;
+		gap: 30px;
 
 		@media (max-width: $reponsive-sm) {
 			gap: 20px;

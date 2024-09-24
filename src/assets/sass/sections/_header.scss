@@ -1,6 +1,7 @@
 header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding: 45px 45px 0 45px;
 
 	@media (max-width: $reponsive-sm) {
@@ -12,8 +13,8 @@ header {
 		height: 68px;
 
 		@media (max-width: $reponsive-sm) {
-			width: 145px;
-			height: 46.88px;
+			height: 40.88px;
+			width: 100px;
 		}
 
 		&:hover {
@@ -36,15 +37,20 @@ header {
 				a {
 					text-align: right;
 					font-weight: 500;
-					color: $primary-color;
+					color: $bg-black;
 					text-decoration: none;
 					font-size: 24px;
 					line-height: 34.22px;
+					white-space: nowrap;
 
 					@media (max-width: $reponsive-sm) {
 						text-transform: uppercase;
 						line-height: 17.11px;
 						font-size: 12px;
+					}
+
+					@media (max-width: $reponsive-sm) {
+						font-size: 14px;
 					}
 				}
 			}

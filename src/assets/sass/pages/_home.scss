@@ -13,6 +13,10 @@
 		@media (max-width: $reponsive-sm) {
 			margin-bottom: 27px;
 		}
+
+		img {
+			filter: brightness(45%);
+		}
 	}
 
 	.gallery__rentals {
