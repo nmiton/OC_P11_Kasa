@@ -10,15 +10,8 @@ export default function RentalCard(props) {
 		setRental(props.rental);
 	}, [props.rental]);
 
-	/**
-	 * Function to redirect to rental page
-	 */
-	const handleClickRentalCard = () => {
-		navigate(`/logement/${rental.id}`);
-	};
-
 	return (
-		<div className="rental__card" onClick={handleClickRentalCard}>
+		<div className="rental__card" onClick={() => navigate(`/logement/${rental.id}`)}>
 			<img className="rental__cover" alt={rental.title} src={rental.cover} />
 			<span className="rental__title">{rental.title}</span>
 		</div>

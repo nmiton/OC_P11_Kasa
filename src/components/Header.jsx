@@ -4,16 +4,9 @@ import Logo from "../assets/img/logo.png";
 export default function Header() {
 	const navigate = useNavigate();
 
-	/**
-	 * Function on click icon
-	 */
-	const handleClickIcon = () => {
-		navigate("/");
-	};
-
 	return (
 		<header>
-			<img src={Logo} alt="Logo Kasa" className="header__img" onClick={handleClickIcon} />
+			<img src={Logo} alt="Logo Kasa" className="header__img" onClick={() => navigate("/")} />
 
 			<nav className="header__navigation">
 				<ul>

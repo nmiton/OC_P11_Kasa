@@ -18,9 +18,7 @@ export default function Rental() {
 	 */
 	useEffect(() => {
 		logements.forEach((rental) => {
-			if (rental.id === id) {
-				setRental(rental);
-			}
+			if (rental.id === id) setRental(rental);
 		});
 	}, [id]);
 
